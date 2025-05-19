@@ -1,0 +1,28 @@
+[package]
+name = "rust_infra"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4.41"
+serde = "1.0.219"
+serde_json = "1.0.140"
+tokio =  { version = "1.45.0", features = ["full"] }
+
+[[bin]]
+path = "udp/server.rs"
+name = "udp-server"
+
+[[bin]]
+path = "udp/client.rs"
+name = "udp-client"
+
+[[bin]]
+path = "tcp/server.rs"
+name = "tcp-server"
+
+[[bin]]
+path = "tcp/client.rs"
+name = "tcp-client"
+
+
