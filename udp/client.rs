@@ -1,8 +1,7 @@
 use serde_json;
 use std::{io, time};
-use tokio::net::UdpSocket;
 use tokio;
-
+use tokio::net::UdpSocket;
 
 #[tokio::main]
 async fn main() -> io::Result<()> {
@@ -12,7 +11,6 @@ async fn main() -> io::Result<()> {
     let bytes = v.as_bytes();
     let socket = UdpSocket::bind("127.0.0.1:8081").await?;
     loop {
-
         let len = socket.send_to(bytes, "127.0.0.1:8080").await?;
         println!("{:?} bytes sent", len);
 

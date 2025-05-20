@@ -22,7 +22,7 @@ path = "tcp/server.rs"
 name = "tcp-server"
 
 [[bin]]
-path = "tcp/client.rs"
-name = "tcp-client"
+path = "kv/kvstore.rs"
+name = "kv-store"
 
 
