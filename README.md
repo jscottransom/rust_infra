@@ -1,6 +1,6 @@
 # Distributed Infrastructure Practice Projects
 
-This repository contains hands-on exercises to practice building distributed infrastructure systems using **Rust** and **Go**. These small projects are meant to enforce core concepts such as messaging, concurrency, file safety, and network communication in a distributed context.
+This repository contains hands-on exercises to practice building distributed infrastructure systems using **Rust** and **Go**. These small-medium projects are meant to enforce core concepts such as messaging, concurrency, file safety, and network communication in a distributed context.
 
 ## 📦 Project List
 
@@ -23,36 +23,6 @@ This repository contains hands-on exercises to practice building distributed inf
 - **Goal**: Simulate peer-to-peer message spreading using a gossip protocol.
 - **Concepts**: Random peer selection, periodic communication, topology awareness.
 
-
-#### 5. Distributed File Writer
-- **Goal**: Accept chunked data from multiple clients and write to specific parts of a file based on offsets.
-- **Concepts**: File seeks, partial writes, chunked data protocols.
-
----
-
-### 🐹 Go Projects
-
-#### 1. HTTP-Based Service Registry
-- **Goal**: Build a minimal Consul-like registry where services can register and query others.
-- **Concepts**: HTTP routing, maps for in-memory storage, TTLs for expiration.
-
-#### 2. Pub/Sub Over TCP
-- **Goal**: Implement a publisher-subscriber system where clients subscribe to topics and receive real-time messages.
-- **Concepts**: Goroutines, channels, topic mapping, broadcast fan-out.
-
-#### 3. Leader Election via Heartbeats
-- **Goal**: Simulate multiple nodes and determine a leader based on liveness and priority.
-- **Concepts**: Goroutines, timers, heartbeat messages, simple election algorithms.
-
-#### 4. Fan-Out Metrics Collector
-- **Goal**: Build a central collector that ingests metrics from edge nodes and logs them with timestamps.
-- **Concepts**: TCP servers, batching, timestamp tagging, centralized ingestion.
-
-#### 5. File Transfer Over TCP with Checksums
-- **Goal**: Send files in chunks with integrity verification using checksums.
-- **Concepts**: TCP streaming, hashing (SHA-256), chunking, reassembly.
-
----
 
 ## 🧠 Skills Targeted
 
